@@ -1,0 +1,17 @@
+{
+	"ulid": "01HMF5N10ERP59KDBFCGTV9BSR",
+	"minTime": 1705528800000,
+	"maxTime": 1705536000000,
+	"stats": {
+		"numSamples": 17811206,
+		"numSeries": 6516,
+		"numChunks": 152257
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HMF5N10ERP59KDBFCGTV9BSR"
+		]
+	},
+	"version": 1
+}

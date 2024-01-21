@@ -1,0 +1,17 @@
+{
+	"ulid": "01HMCTE9E30BYSXSY0RDRFVWSV",
+	"minTime": 1705521600000,
+	"maxTime": 1705528800000,
+	"stats": {
+		"numSamples": 5467382,
+		"numSeries": 6293,
+		"numChunks": 42952
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HMCTE9E30BYSXSY0RDRFVWSV"
+		]
+	},
+	"version": 1
+}

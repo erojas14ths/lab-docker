@@ -1,0 +1,43 @@
+global:
+  scrape_interval: 2s
+  external_labels:
+    monitor: 'codelab-monitor'
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 2s
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'grafana'
+    scrape_interval: 2s 
+    static_configs:
+      - targets: ['grafana:3000'] 
+
+  - job_name: 'loki'
+    scrape_interval: 2s 
+    static_configs:
+      - targets: ['loki:3100'] 
+
+  - job_name: 'fluent-bit'
+    scrape_interval: 2s 
+    metrics_path: "/api/v1/metrics/prometheus" 
+    static_configs:
+      - targets: ['fluent-bit:2020'] 
+
+  - job_name: 'tempo'
+    scrape_interval: 2s 
+    static_configs:
+      - targets: ['tempo:3200']
+
+  - job_name: 'app-server'
+    scrape_interval: 2s
+    metrics_path: "/actuator/prometheus" 
+    static_configs:
+      - targets: ['app-server:8080']
+
+  - job_name: 'app-client'
+    scrape_interval: 2s
+    metrics_path: "/actuator/prometheus" 
+    static_configs:
+      - targets: ['app-client:8080']
