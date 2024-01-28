@@ -15,5 +15,3 @@ services:
     container_name: app-server
     environment:
       - SPRING_PROFILES_ACTIVE=docker
-    ports:
-      - "8081"
